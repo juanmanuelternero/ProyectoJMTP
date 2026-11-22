@@ -1,1 +1,20 @@
+USE cubos_de_Rubik;
+-- DELETE FROM records;
+-- DELETE FROM Soluciones;
+-- DELETE FROM Usuarios;
+-- DELETE FROM tipocubo;
+
+
+INSERT INTO Usuarios (nombre, rol) VALUES ('Ana', 'administrador');
+INSERT INTO Usuarios (nombre, rol) VALUES ('Carlos', 'usuario'), ('Lucía', 'usuario'), ('Marcos', 'administrador');
+
+INSERT INTO tipocubo (nombre, forma) VALUES ('3x3', 'cubo'),('Megaminx','dodecaedro'),('Pyraminx','tetraedro');
+
+INSERT INTO Soluciones (cubo_solucion, id_Tipo) VALUES ('Cruz Blanca, esquinasbalancas',1);
+INSERT INTO Soluciones (cubo_solucion, id_Tipo) VALUES ('Cruz Blanca, dos primeras capas',1);
+
+INSERT INTO records (nombre, id_Tipo, tiempo_solucion, fecha_solucion) VALUES ('Carlos', 1, 90, '2026-8-11');
+INSERT INTO records (nombre, id_Tipo, tiempo_solucion, fecha_solucion) VALUES ('Lucia', 1, 75, '2026-9-14');
+
+
 
